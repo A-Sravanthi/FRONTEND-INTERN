@@ -73,7 +73,7 @@ const Sidebar: React.FC<Props> = ({ startChat }) => {
         <Typography color="primary" sx={{ mb: 1 }}>Try Pro →</Typography>
         <Box display="flex" alignItems="center">
           <Avatar sx={{ mr: 1 }}>L</Avatar>
-          <Typography>Laurence</Typography>
+          <Typography>Sravanthi A</Typography>
         </Box>
       </Box>
     </Box>
