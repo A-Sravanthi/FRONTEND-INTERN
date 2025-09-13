@@ -27,10 +27,10 @@ const NewChatScreen: React.FC<Props> = ({ startChat }) => {
   return (
     <Box display="flex" flexDirection="column" flex={1} height="100%">
       <Box flex={1} display="flex" flexDirection="column" alignItems="center" justifyContent="center" p={2}>
-        <Typography variant="h5" gutterBottom>
-          👋 Hi Laurence!
+        <Typography variant="h3" gutterBottom>
+          👋 Hi Sravanthi!
         </Typography>
-        <Typography variant="h6" gutterBottom>
+        <Typography variant="h4" gutterBottom>
           What do you want to learn today?
         </Typography>
 
