@@ -1,69 +1,39 @@
-# React + TypeScript + Vite
+VERCEL: https://frontend-intern-steel.vercel.app/
+This the flow of my assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+/src
 
-Currently, two official plugins are available:
+  /components
+  
+    Header.tsx
+    Sidebar.tsx
+    QuickCard.tsx
+    MessageBubble.tsx
+    ChatInput.tsx
+    
+  /screens
+  
+    NewChatScreen.tsx
+    ActiveChatScreen.tsx
+    
+  /context
+  
+    ChatContext.tsx
+  /types
+  
+    types.ts
+    
+  App.tsx
+  
+  theme.ts
+  
+  And I added data in tsconfig.json because reactnode usage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+COMMANDS FOR PROCESS:
+npm create vite@latest frontend-intern -- --template react-ts
+cd frontend-intern
+npm install
+npm install @mui/material @mui/icons-material @emotion/react @emotion/styled
+npm install --save-dev @types/react @types/react-dom
+npm run dev
+code .
